@@ -16,15 +16,25 @@ void handleSystemCommand(SOCKET sock,
                          const std::vector<std::string>& args,
                          const std::string& request){
 							 
-    if (command == "engineupdate") {
+    if (command == "engine") { //client engine updates
         g_server->addGuiLog("engine query detected");
     }
 	
-    else if (command == "system") {
+    else if (command == "system") { //connections registrations
         g_server->addGuiLog("system query detected");
+    }
+	
+	else if (command == "say") { //plugins facelet executes logic at the server only
+		executePluginCommand(sock, clientAddr, args, request);      
+    }
+	
+	else if (command == "callbacks") { //callbacks facelet executes logic at the client side
+		//excallbacks(sock, clientAddr, args, request);      
     }
 
     else {
-        executePluginCommand(sock, clientAddr, args, request);
-    }
+		
+		g_server->addGuiLog(request);
+    
+	}
 }
