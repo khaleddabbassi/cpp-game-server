@@ -1,0 +1,37 @@
+{
+  "compiler": "g++",
+  "sourceFiles": [
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/imgui-master/imgui.cpp",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/imgui-master/imgui_draw.cpp",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/imgui-master/imgui_widgets.cpp",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/imgui-master/imgui_tables.cpp",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/imgui-master/backends/imgui_impl_glfw.cpp",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/imgui-master/backends/imgui_impl_opengl3.cpp",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/glew-2.1.0/src/glew.c"
+  ],
+  "autoIncludeFolder": "C:/Users/kloodasprr/Desktop/cpp/secondserver",
+  "includePaths": [
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/glfw-3.4.bin.WIN64/include",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/imgui-master",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/imgui-master/backends",
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/glew-2.1.0/include"
+  ],
+  "libraryPaths": [
+    "C:/Users/kloodasprr/Desktop/cpp/libraries/glfw-3.4.bin.WIN64/lib-mingw-w64"
+  ],
+  "libraries": [
+    "glfw3",
+    "opengl32",
+    "gdi32",
+    "user32",
+    "kernel32",
+    "ws2_32"
+  ],
+  "output": "darksunproject.exe",
+  "compilerFlags": [
+    "-Wall",
+    "-std=c++17",
+    "-DGLEW_STATIC",
+	"-mwindows"
+  ]
+}
