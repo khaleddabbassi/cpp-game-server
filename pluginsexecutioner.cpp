@@ -6,7 +6,7 @@
 #include <unordered_map>
 #include <functional>
 #include <sstream>
-#include "embeddedcommands.h"
+#include "nativeservercmds.h"
 
 std::unordered_map<std::string, PluginCommand> pluginCommandMap;
 
