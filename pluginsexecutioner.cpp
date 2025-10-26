@@ -83,10 +83,10 @@ void registerDefaultPluginCommands() {
         g_server->addGuiLog("restarting in progress ");
     };
 	
-	pluginCommandMap["fetchpps"] = [](SOCKET sock, const sockaddr_in& clientAddr,
+	pluginCommandMap["/fetchpps"] = [](SOCKET sock, const sockaddr_in& clientAddr,
                                       const std::vector<std::string>& args,
                                       const std::string& request) {
-        g_server->addGuiLog("fetching player permission codes...");
+        g_server->addGuiLog("printing player's permission codes...");
 		
 		//player sends callback request
 		//server fetches data 
